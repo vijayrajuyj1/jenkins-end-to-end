@@ -1,12 +1,10 @@
 pipeline {
-  agent docker {
-      label 'java-build-node'
-      image 'vijayarajult2/pa-end:v3'
-      args '--user root -v /var/run/docker.sock:/var/run/docker.sock' // mount Docker socket to access the host's Docker daemon
-    }
+  agent {
+    label 'java-build-node'
   }
 
   environment {
+    image = "vijayarajult2/pa-end:v3"
     DOCKER_IMAGE = "vijayarajult2/pa-end:${BUILD_NUMBER}"
     SONAR_URL = "http://34.230.89.106:9000"
     GIT_REPO_NAME = "Jenkins-end-to-end"
