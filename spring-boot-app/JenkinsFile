@@ -9,7 +9,7 @@ pipeline {
         SONAR_URL = "http://34.230.89.106:9000"
         GIT_REPO_NAME = "Jenkins-end-to-end"
         GIT_USER_NAME = "vijayrajuyj1"
-        REGISTRY_CREDENTIALS = credentials('dokcer-cred')
+        REGISTRY_CREDENTIALS = credentials('docker-cred')
         AWS_REGION = 'us-east-1'
     }
 
