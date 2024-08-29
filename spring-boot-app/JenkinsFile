@@ -4,8 +4,7 @@ pipeline {
     }
 
     environment {
-        image = "vijayarajult2/pa-end:v3"
-        DOCKER_IMAGE = "vijayarajult2/pa-end:${BUILD_NUMBER}"
+        DOCKER_IMAGE = "vijayarajult2/pa-start:${BUILD_NUMBER}"
         SONAR_URL = "http://34.230.89.106:9000"
         GIT_REPO_NAME = "Jenkins-end-to-end"
         GIT_USER_NAME = "vijayrajuyj1"
