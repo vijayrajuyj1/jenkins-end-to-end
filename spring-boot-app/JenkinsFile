@@ -59,7 +59,7 @@ pipeline {
                 script {
                     try {
                         echo "Running Docker container from image ${DOCKER_IMAGE}..."
-                        def container = docker.image("${DOCKER_IMAGE}").run("-d -p 8081:8081")
+                        def container = docker.image("${DOCKER_IMAGE}").run("-d -p 8082:8082")
                         echo "Running container ${container.id}"
                     } catch (Exception e) {
                         echo "Failed to run Docker container: ${e.message}"
