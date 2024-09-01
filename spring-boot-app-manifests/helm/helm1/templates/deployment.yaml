@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: spring-boot-app
-        image: vijayarajult2/pa-end:{{ .Values.image.tag }}
+        image: vijayarajult2/pa-start:{{ .Values.image.tag }}
         ports:
         - containerPort: 8080
