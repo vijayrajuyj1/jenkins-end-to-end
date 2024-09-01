@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: vijayarajult2/pa-end
+  repository: vijayarajult2/pa-start
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: "v3"
